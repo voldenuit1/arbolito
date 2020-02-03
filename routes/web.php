@@ -28,7 +28,7 @@ Route::get('/colaboradores', function () {
 /**el metodo para la ruta cool: carpeta con los blade de colaboradores y el nombre del
  controlador
 */
-
+//todas las rutas necesarias para acceder al contrlador
 Route::resource('colaboradores', 'CollaboratorsController');
 
 Route::get('/home', 'HomeController@index')->name('home');

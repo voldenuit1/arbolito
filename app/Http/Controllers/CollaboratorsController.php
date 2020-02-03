@@ -76,7 +76,10 @@ class CollaboratorsController extends Controller
      */
     public function update(Request $request, Collaborators $collaborators)
     {
-        //
+        // con esto se almacena tolo que se envia al metodo storage
+           $datosCollaborator=request()->all();
+        //no retornará una vista , será una respuesta:   
+           return response()->json($datosCollaborator);
     }
 
     /**
